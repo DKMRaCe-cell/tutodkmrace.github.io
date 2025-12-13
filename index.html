@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Tuto DKM RaCe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* Police et fond général */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #1e1e1e;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* En-tête et pied de page */
+header, footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Contenu principal */
+main {
+    max-width: 950px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Titres */
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* Sections */
+section {
+    margin-bottom: 50px;
+}
+
+/* Paragraphes explicatifs */
+p.explanation {
+    font-style: italic;
+    color: #4a5568;
+    margin-bottom: 15px;
+}
+
+/* Titres des exemples */
+.example-title {
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    color: #34495e;
+}
+
+/* Bloc code */
+pre {
+    background-color: #ecf0f1;
+    padding: 25px;
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 0.95em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: visible;
+    border-left: 5px solid #2980b9;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+/* Inline code */
+code {
+    font-family: monospace;
+    background-color: #dfe6e9;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Listes */
+ul.explanation {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 768px) {
+    main {
+        padding: 20px 25px;
+    }
+    pre {
+        padding: 15px;
+        line-height: 1.6;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Tuto DKM RaCe</h1>
+<p>Apprenez les balises HTML et le CSS avec des codes visibles et bien expliqués.</p>
+</header>
+
+<main>
+
+<section>
+<h2>Introduction</h2>
+<p class="explanation">Ce tutoriel est destiné aux débutants. Tous les codes HTML et CSS sont visibles pour lecture et copie. Aucun exemple ne s'exécutera. Vous verrez pour chaque balise :</p>
+<ul class="explanation">
+    <li>Son nom et sa syntaxe</li>
+    <li>Sa fonction</li>
+    <li>Un exemple que vous pouvez copier</li>
+</ul>
+</section>
+
+<section>
+<h2>Structure de base</h2>
+<p class="explanation">Voici un exemple minimal de fichier HTML avec un peu de CSS intégré :</p>
+
+<div class="example-title">Code :</div>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;fr&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Mon site&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;  Bonjour le monde &lt;/h1&gt;
+
+    &lt;p&gt;    Mon premier site &lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+</section>
+
+<section>
+<h2>Balises HTML</h2>
+
+<h3>Texte</h3>
+<p class="explanation">Ces balises servent à structurer et mettre en forme du texte :</p>
+<pre><code>
+&lt;h1&gt;&lt;/h1&gt;      cette balise sert à : "Titre principal de la page"
+
+&lt;h2&gt;&lt;/h2&gt;      cette balise sert à : "Titre secondaire"
+
+&lt;h3&gt;&lt;/h3&gt;      cette balise sert à : "Titre tertiaire"
+
+&lt;p&gt;&lt;/p&gt;        cette balise sert à : "Créer un paragraphe de texte"
+
+&lt;strong&gt;&lt;/strong&gt;  cette balise sert à : "Mettre du texte en gras (importance)"
+
+&lt;em&gt;&lt;/em&gt;        cette balise sert à : "Mettre du texte en italique (emphase)"
+
+&lt;br&gt;                 cette balise sert à : "Retour à la ligne"
+
+&lt;span&gt;&lt;/span&gt;    cette balise sert à : "Conteneur inline pour styliser ou cibler du texte"
+</code></pre>
+
+<h3>Structure</h3>
+<p class="explanation">Ces balises définissent la structure de la page :</p>
+<pre><code>
+&lt;header&gt;&lt;/header&gt;    cette balise sert à : "En-tête de la page ou d’une section"
+
+&lt;nav&gt;&lt;/nav&gt;          cette balise sert à : "Zone de navigation avec liens"
+
+&lt;main&gt;&lt;/main&gt;        cette balise sert à : "Contenu principal"
+
+&lt;section&gt;&lt;/section&gt;  cette balise sert à : "Section thématique"
+
+&lt;article&gt;&lt;/article&gt;  cette balise sert à : "Contenu indépendant (article)"
+
+&lt;aside&gt;&lt;/aside&gt;      cette balise sert à : "Contenu secondaire, comme une sidebar"
+
+&lt;footer&gt;&lt;/footer&gt;    cette balise sert à : "Pied de page"
+</code></pre>
+
+<h3>Listes</h3>
+<pre><code>
+&lt;ul&gt;&lt;/ul&gt;        cette balise sert à : "Créer une liste non ordonnée"
+
+&lt;ol&gt;&lt;/ol&gt;        cette balise sert à : "Créer une liste ordonnée"
+
+&lt;li&gt;&lt;/li&gt;        cette balise sert à : "Élément d’une liste"
+</code></pre>
+
+<h3>Liens</h3>
+<pre><code>
+&lt;a href=&quot;URL&quot;&gt;&lt;/a&gt;    cette balise sert à : "Créer un lien vers une autre page ou site"
+</code></pre>
+
+<h3>Images et médias</h3>
+<pre><code>
+&lt;img src=&quot;image.jpg&quot; alt=&quot;Description&quot;&gt;  cette balise sert à : "Afficher une image"
+
+&lt;audio controls&gt;&lt;source src=&quot;audio.mp3&quot; type=&quot;audio/mpeg&quot;&gt;&lt;/audio&gt;  cette balise sert à : "Lire un fichier audio"
+
+&lt;video controls&gt;&lt;source src=&quot;video.mp4&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;  cette balise sert à : "Lire une vidéo"
+
+&lt;iframe src=&quot;URL&quot;&gt;&lt;/iframe&gt;  cette balise sert à : "Intégrer un contenu externe (ex. vidéo YouTube)"
+
+&lt;figure&gt;&lt;img src=&quot;image.jpg&quot;&gt;&lt;figcaption&gt;Légende&lt;/figcaption&gt;&lt;/figure&gt;  cette balise sert à : "Encadrer un média avec une légende"
+</code></pre>
+
+<h3>Formulaires</h3>
+<pre><code>
+&lt;form&gt;&lt;/form&gt;           cette balise sert à : "Créer un formulaire"
+
+&lt;input type=&quot;text&quot;&gt;   cette balise sert à : "Champ texte"
+
+&lt;input type=&quot;password&quot;&gt;  cette balise sert à : "Champ mot de passe"
+
+&lt;input type=&quot;submit&quot;&gt;    cette balise sert à : "Bouton envoyer"
+
+&lt;textarea&gt;&lt;/textarea&gt;     cette balise sert à : "Zone de texte multi-ligne"
+
+&lt;label&gt;&lt;/label&gt;           cette balise sert à : "Étiquette pour un champ du formulaire"
+
+&lt;select&gt;&lt;/select&gt;         cette balise sert à : "Liste déroulante"
+
+&lt;option&gt;&lt;/option&gt;         cette balise sert à : "Option dans une liste déroulante"
+</code></pre>
+
+<h3>Tableaux</h3>
+<pre><code>
+&lt;table&gt;&lt;/table&gt;     cette balise sert à : "Créer un tableau"
+
+&lt;tr&gt;&lt;/tr&gt;           cette balise sert à : "Ligne du tableau"
+
+&lt;th&gt;&lt;/th&gt;           cette balise sert à : "Cellule d’en-tête"
+
+&lt;td&gt;&lt;/td&gt;           cette balise sert à : "Cellule de données"
+</code></pre>
+
+</section>
+
+</main>
+
+<footer>
+<p>Tutoriel HTML & CSS – Créé par Mathias DAGBEDJI</p>
+</footer>
+
+</body>
+</html>
